@@ -16,6 +16,12 @@ body{
     font-size: 20px;
 }
 
+#periodic_table td.element:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    opacity: 0.6;
+}
+
 #periodic_table td.family-hydrogen{
     background-color: yellow;
 }
