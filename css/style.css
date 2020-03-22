@@ -1,0 +1,77 @@
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#periodic_table{
+    margin: 0 auto;
+}
+
+
+#periodic_table td{
+    border: none;
+    height: 50px;
+    width: 50px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#periodic_table td.family-hydrogen{
+    background-color: yellow;
+}
+
+
+#periodic_table td.family-alkali-metal{
+    background-color: pink;
+}
+
+
+#periodic_table td.family-alkaline-earth-metal{
+    background-color: orange;
+}
+
+
+#periodic_table td.family-transition-metal{
+    background-color: #7180ea;
+}
+
+
+#periodic_table td.family-other-metal{
+    background-color: #e26c6c;
+}
+
+
+#periodic_table td.family-semiconductor{
+    background-color: gold;
+}
+
+
+#periodic_table td.family-other-non-metal{
+    background-color: #58ce58;
+}
+
+
+#periodic_table td.family-halogen{
+    background-color: #b47dd0;
+}
+
+
+#periodic_table td.family-noble-gas{
+    background-color: #d2a6a6;
+}
+
+#periodic_table td.state-gas{
+    color: red;
+}
+
+#periodic_table td.state-liquid{
+    color: blue;
+}
+
+#periodic_table td.state-artificial{
+    color: gold;
+}
+
+#periodic_table td.state-unknown{
+    color: gray;
+}
