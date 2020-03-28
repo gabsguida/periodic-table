@@ -81,3 +81,53 @@ body{
 #periodic_table td.state-unknown{
     color: gray;
 }
+
+#element_wrapper {
+    display: flex;
+    margin: 0 auto;
+    width: 1000px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+#element_wrapper .left-column{
+    flex-basis: 25%;
+
+}
+
+#element_wrapper .right-column{
+    flex-basis: 75%;
+    text-align: left;
+    padding: 10px;
+}
+
+#element_wrapper .element{
+    width: 210px;
+    height: 210px;
+    margin: 10px;
+    background-color: pink;
+    padding: 10px;
+}
+
+#element_wrapper .element span.element-number{
+    display:block;
+    font-size: 30px;
+    text-align: left;
+}
+
+#element_wrapper .element span.element-symbol{
+    display: block;
+    font-size: 100px;
+    line-height: 100px;
+}
+
+#element_wrapper .element span.element-name{
+    display: block;
+    font-size: 30px;
+}
+
+#element_wrapper .element span.element-weight{
+    display: block;
+    font-size: 20px;
+}
