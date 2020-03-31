@@ -22,63 +22,67 @@ body{
     opacity: 0.6;
 }
 
-#periodic_table td.family-hydrogen{
+.element.family-hydrogen{
     background-color: yellow;
 }
 
 
-#periodic_table td.family-alkali-metal{
+.element.family-alkali-metal{
     background-color: pink;
 }
 
 
-#periodic_table td.family-alkaline-earth-metal{
+.element.family-alkaline-earth-metal{
     background-color: orange;
 }
 
 
-#periodic_table td.family-transition-metal{
+.element.family-transition-metal{
     background-color: #7180ea;
 }
 
 
-#periodic_table td.family-other-metal{
+.element.family-other-metal{
     background-color: #e26c6c;
 }
 
 
-#periodic_table td.family-semiconductor{
+.element.family-semiconductor{
     background-color: gold;
 }
 
 
-#periodic_table td.family-other-non-metal{
+.element.family-other-non-metal{
     background-color: #58ce58;
 }
 
 
-#periodic_table td.family-halogen{
+.element.family-halogen{
     background-color: #b47dd0;
 }
 
 
-#periodic_table td.family-noble-gas{
+.element.family-noble-gas{
     background-color: #d2a6a6;
 }
 
-#periodic_table td.state-gas{
+td.element.state-gas, 
+#element_box.state-gas .element-symbol{
     color: red;
 }
 
-#periodic_table td.state-liquid{
+td.element.state-liquid, 
+#element_box.state-liquid .element-symbol{
     color: blue;
 }
 
-#periodic_table td.state-artificial{
+td.element.state-artificial, 
+#element_box.state-artificial .element-symbol{
     color: gold;
 }
 
-#periodic_table td.state-unknown{
+td.element.state-unknown, 
+#element_box.state-unknown .element-symbol{
     color: gray;
 }
 
@@ -89,6 +93,11 @@ body{
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: stretch;
+    
+}
+
+#element_wrapper.hidden{
+    display: none;
 }
 
 #element_wrapper .left-column{
@@ -102,32 +111,31 @@ body{
     padding: 10px;
 }
 
-#element_wrapper .element{
+#element_box{
     width: 210px;
     height: 210px;
     margin: 10px;
-    background-color: pink;
     padding: 10px;
 }
 
-#element_wrapper .element span.element-number{
+#element_box span.element-number{
     display:block;
     font-size: 30px;
     text-align: left;
 }
 
-#element_wrapper .element span.element-symbol{
+#element_box span.element-symbol{
     display: block;
     font-size: 100px;
     line-height: 100px;
 }
 
-#element_wrapper .element span.element-name{
+#element_box span.element-name{
     display: block;
     font-size: 30px;
 }
 
-#element_wrapper .element span.element-weight{
+#element_box span.element-weight{
     display: block;
     font-size: 20px;
 }

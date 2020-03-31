@@ -4873,12 +4873,14 @@ var periodic_table = {
     ]
 }	
 
+// this function will be use to show the element properties inside the function displayElement()
 function writeOnHTMLElements(elementList, text){
     for (index = 0; index < elementList.length; index++){
         elementList[index].innerText = text;
     }
 }
 
+// function that returns with element symbol
 function getPeriodicElement(symbol) {
     for (index = 0; index < periodic_table.elements.length; index++){
         if (periodic_table.elements[index].symbol == symbol){
@@ -4887,7 +4889,7 @@ function getPeriodicElement(symbol) {
     } 
 }
 
-
+// this function enable to click anywhere without giving error mesage 
 function clickCallback(event){
     if (event.target.tagName != "TD"){
         return false;
@@ -4896,10 +4898,13 @@ function clickCallback(event){
         return false;
     }
     var el = getPeriodicElement(event.target.innerText)
-    displayElement(el)
+    //console.log(event.target.className)
+    displayElement(el, event.target.className) // will show every element property when clicking on periodic table 
+    
 }
 
-function displayElement(element){
+// call every class that represents the properties on JSON
+function displayElement(element, elementClasses){
     var number = document.getElementsByClassName("element-number");
     writeOnHTMLElements(number, element.number);
     var symbol = document.getElementsByClassName("element-symbol");
@@ -4920,6 +4925,8 @@ function displayElement(element){
     writeOnHTMLElements(melt, element.melt);
     var density = document.getElementsByClassName("element-density");
     writeOnHTMLElements(density, element.density);
+    document.getElementById("element_wrapper").className = "";
+    document.getElementById("element_box").className = elementClasses;
 }
 
 document.addEventListener("click", clickCallback , false);
