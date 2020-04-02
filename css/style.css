@@ -139,3 +139,22 @@ td.element.state-unknown,
     display: block;
     font-size: 20px;
 }
+
+p.element-summary{
+    text-align: justify;
+}
+
+ol.element-ionization{
+    list-style: none;
+    counter-reset: element-ionization;
+    margin-left: 0;
+}
+
+ol.element-ionization li{
+    counter-increment: element-ionization;
+}
+
+ol.element-ionization li::before{
+    content: "IE" counter(element-ionization);
+    margin-right: 10px;
+}
