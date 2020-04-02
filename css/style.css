@@ -158,3 +158,22 @@ ol.element-ionization li::before{
     content: "IE" counter(element-ionization);
     margin-right: 10px;
 }
+
+/* Legend Component */
+
+#table_wrapper{
+    position: relative;
+}
+
+#legend{
+    border: 1px solid gray;
+    text-align: left;
+    width: 400px;
+    font-size: 12px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 5px;
+    left: 350px;
+    background-color: #f9f8f5;
+
+}
