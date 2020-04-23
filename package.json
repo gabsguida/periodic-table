@@ -1,0 +1,22 @@
+{
+  "name": "periodic-table",
+  "version": "1.0.0",
+  "description": "periodic table",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabsguida/periodic-table.git"
+  },
+  "author": "Gabriela",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabsguida/periodic-table/issues"
+  },
+  "homepage": "https://github.com/gabsguida/periodic-table#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
